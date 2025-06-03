@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+
+@layer components {
+	.page-margins {
+		@apply m-auto min-h-[100vh] w-[min(1320px,94%)];
+	}
+
+	.nav-margins {
+		@apply px-6;
+	}
+
+	.nav-link {
+		@apply relative flex cursor-pointer items-center justify-center rounded p-1.5 text-sm text-neutral-500 duration-200 hover:bg-neutral-200/80 hover:text-neutral-700;
+	}
+
+	.btn-primary {
+		@apply flex cursor-pointer items-center justify-center rounded-lg bg-cyan-500 px-2 text-sm font-semibold whitespace-nowrap text-white duration-200 hover:bg-cyan-400 disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:bg-cyan-500;
+	}
+
+	.btn-secondary {
+		@apply flex cursor-pointer items-center justify-center rounded-lg border-2 border-cyan-300 bg-cyan-50 px-2 text-sm font-semibold whitespace-nowrap text-cyan-500 duration-200 hover:border-cyan-500 hover:bg-cyan-100 disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:border-cyan-300;
+	}
+
+	.btn-red {
+		@apply flex cursor-pointer items-center justify-center rounded-lg border-2 border-red-400 bg-red-50 px-2 text-sm font-semibold whitespace-nowrap text-red-400 duration-200 hover:border-red-600 hover:bg-red-100 disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:border-red-400;
+	}
+
+	.link {
+		@apply relative font-[450] whitespace-nowrap text-cyan-500 duration-200 after:absolute after:bottom-0 after:left-1 after:h-[50%] after:w-full after:origin-right after:rounded-sm after:bg-blue-400/10 after:duration-200 hover:after:bottom-[10%] hover:after:-left-[2px] hover:after:h-[80%] hover:after:w-[calc(100%+4px)] disabled:cursor-not-allowed;
+	}
+
+	.input {
+		@apply rounded border-2 border-neutral-200 px-2 py-1 ring-cyan-400 duration-200 focus:ring-2 focus:outline-none;
+	}
+
+	.dashboard-link {
+		@apply flex items-center gap-x-2 rounded-lg p-2 text-[15px] text-neutral-600 transition-colors hover:bg-neutral-100/80;
+	}
+}
+
+@layer base {
+	html,
+	base {
+		@apply overflow-x-hidden overflow-y-scroll bg-[#fdfdfd];
+	}
+
+	a {
+		@apply cursor-pointer;
+	}
+
+	h1 {
+		@apply text-5xl leading-tight font-bold text-gray-900;
+	}
+
+	h2 {
+		@apply text-3xl leading-tight font-bold text-gray-900;
+	}
+
+	h3 {
+		@apply text-xl leading-snug font-bold text-gray-900;
+	}
+
+	h4 {
+		@apply text-xl leading-snug font-medium text-gray-900;
+	}
+
+	h5 {
+		@apply text-lg leading-normal font-medium text-gray-900;
+	}
+
+	h6 {
+		@apply text-base leading-normal font-medium text-gray-900;
+	}
+
+	p {
+		@apply text-sm leading-relaxed text-neutral-600;
+	}
+
+	button {
+		@apply cursor-pointer;
+	}
+
+	hr {
+		@apply w-full border-neutral-200;
+	}
+}
