@@ -1,1 +1,1 @@
-made with django, svelte, and sveltekit
+built with django, svelte, and sveltekit
